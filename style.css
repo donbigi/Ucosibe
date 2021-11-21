@@ -655,7 +655,7 @@ body.scrolled .header--navbar {
 .banner--content h2 {
     margin-top: 0;
     font-weight: 800;
-    font-size: 34px;
+    font-size: clamp(1.5rem, 4.5vw, 3.125rem);
     text-transform: uppercase;
 }
 
@@ -665,7 +665,7 @@ body.scrolled .header--navbar {
 
 .banner--content p {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: clamp(1rem, 3.5vw, 1.9rem);
     font-weight: 300;
 }
 
