@@ -9,7 +9,7 @@
     $message = filter_var($_POST['contactMessage'], FILTER_SANITIZE_STRING);
     
     $error = "";
-    echo($site_owners_email);
+    
 
     if (strlen($name) < 2) {
         $error['name'] = "Please enter your name.";
