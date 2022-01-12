@@ -388,6 +388,7 @@ p:last-child {
     border-radius: 0;
     box-shadow: none;
     border: none;
+
 }
 
 .modal-header {
@@ -1301,7 +1302,7 @@ body.scrolled .header--navbar {
     line-height: 18px;
 }
 
-/* 8.4. BLOG DETAILS MODAL */
+/* 8.4. BLOG DETAILS modal-lg */
 .post--details .logo {
     color: #fff;
     margin-top: 7px;
