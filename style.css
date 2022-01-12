@@ -982,7 +982,7 @@ body.scrolled .header--navbar {
 
 /* X.X. GALLERY MODAL */
 .gallery--details .modal-body {
-    text-align: center;
+    text-align: left;
 }
 
 .gallery--details .modal-body img {
@@ -1000,7 +1000,7 @@ body.scrolled .header--navbar {
 }
 
 .gallery--description .modal-body {
-    text-align: center;
+    text-align: left;
 }
 
 .gallery--description p {
@@ -2057,3 +2057,9 @@ body.scrolled #backToTop {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+
