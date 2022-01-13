@@ -388,6 +388,7 @@ p:last-child {
     border-radius: 0;
     box-shadow: none;
     border: none;
+
 }
 
 .modal-header {
@@ -655,11 +656,7 @@ body.scrolled .header--navbar {
 .banner--content h2 {
     margin-top: 0;
     font-weight: 800;
-<<<<<<< HEAD
     font-size: clamp(1.5rem, 4.5vw, 3.125rem);
-=======
-    font-size: 35px;
->>>>>>> f565f5f83782550a04ed698da409368800f0e0e8
     text-transform: uppercase;
 }
 
@@ -1301,7 +1298,7 @@ body.scrolled .header--navbar {
     line-height: 18px;
 }
 
-/* 8.4. BLOG DETAILS MODAL */
+/* 8.4. BLOG DETAILS modal-lg */
 .post--details .logo {
     color: #fff;
     margin-top: 7px;
@@ -2063,3 +2060,4 @@ code {
     font-family: courier, monospace;
     padding: 0 3px;
 
+}
