@@ -68,11 +68,14 @@
         <p style="text-align: justify;">
           Before proceeding, here are the libraries I used in this project.
           <br />
-          <code>import numpy as np</code>
-          <br />
-          <code>import pandas as pd</code>
-          <br />
-          <code>from IPython.core.display import HTML</code>
+          <pre>
+            <code>
+              import numpy as np
+              mport pandas as pd
+              from IPython.core.display import HTML
+            </code>
+          </pre>
+        
         </p>
         <p>
           It is helpful to comment on everything to avoid getting lost in your
@@ -119,13 +122,14 @@
         <p style="text-align: justify;">
           converting the price to dollars
           <br />
-          <code>
-            boat_data['Price_USD'] = np.where(boat_data['Currency'] == 'CHF',
-            boat_data['s_Price'] * 1.09, np.where( boat_data['Currency'] ==
-            'EUR', boat_data['s_Price'] * 1.13, np.where(boat_data['Currency']
-            == 'DKK', boat_data['s_Price'] * 0.15, boat_data['s_Price'] *
-            1.36)))
-          </code>
+          <pre>
+            <code>
+              boat_data.loc[boat_data.Currency == "CHF", "Price_USD"] = boat_data['s_Price'] * 1.09
+              boat_data.loc[boat_data.Currency == "EUR", "Price_USD"] = boat_data['s_Price'] * 1.13
+              boat_data.loc[boat_data.Currency == "DKK", "Price_USD"] = boat_data['s_Price'] * 0.15
+              boat_data.loc[boat_data.Currency == "Â£", "Price_USD"] = boat_data['s_Price'] * 1.36              
+            </code>
+          </pre>
         </p>
         <p style="text-align: justify;">
           The size of the boats was not provided, but the “length” and “width”

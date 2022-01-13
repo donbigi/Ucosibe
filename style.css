@@ -2061,3 +2061,12 @@ code {
     padding: 0 3px;
 
 }
+
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+  }
+
