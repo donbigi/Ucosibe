@@ -5,3 +5,49 @@ NOTE:
 WRITE YOUR OWN CUSTOM CSS STYLES HERE.
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+}
+
+.case-wrapper {
+  max-width: 1300px;
+  margin: 1rem auto;
+  display: block;
+  background-color: #f3f3f3;
+}
+
+.case-study-header {
+  padding: 1rem;
+  background-color: #303030;
+  color: #fff;
+}
+.case-tags {
+  margin-top: 0.6rem;
+}
+.case-project-details {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+.background-info-text {
+  padding-top: 1rem;
+}
+.data-set-1-img-container{
+    display:block;
+    width: 100%;
+    margin: 0.5rem 0 2.5rem 0;
+}
+.boat-data-set{
+    width: 100%;
+    object-fit: cover;
+}
+.after-boat-list{
+    list-style: inside;
+}
