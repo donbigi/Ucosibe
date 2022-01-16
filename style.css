@@ -2063,10 +2063,9 @@ code {
 }
 
 
-pre code {
-    background-color: #eee;
-    border: 1px solid #999;
+pre {
     display: block;
-    padding: 10px;
-  }
-
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+}
