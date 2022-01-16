@@ -33,7 +33,7 @@
       </header>
       <main class="case-project-details">
         <h5 class="background-info-text">
-          <strong>1. Background Info</strong>
+          <strong>Background Info</strong>
         </h5>
         <p style="text-align: justify;">
           I assumed I work as a data analyst for a yacht and boat sales website.
@@ -64,49 +64,27 @@
           <img src="BoatSales/Table.jpg" class="boat-data-set" />
         </div>
 
-        <h5><strong>2. Data Validation</strong></h5>
+        <h5><strong>Data Validation</strong></h5>
         <p style="text-align: justify;">
-          Before proceeding, here are the libraries I used in this project.
-          <br />
-          <pre >
-            <code>
-              import numpy as np
-              mport pandas as pd
-              from IPython.core.display import HTML
-            </code>
-          </pre>
-        
+          Python programming language was used  to clean and manipulate the dataset
+          <a
+            href="https://github.com/donbigi/Case-Study-Project---Boat-Sales/blob/main/data_validation.ipynb"
+            target="_blank"
+          >
+            Click here
+          </a>
+          to view the complete cleaning and manipulation process
         </p>
-        <p>
-          It is helpful to comment on everything to avoid getting lost in your
-          code when you get back to viewing the code a month, a year later.
-          Especially useful if you have a terrible memory like me.
         </p>
         <p style="text-align: justify;">
           The ‘Price’ column contains both the currency and the numeric price. I
           split the column into two for easy calculations, separating the
           currency and price.
         </p>
-        <p>
-          Splitting column
-          <br />
-          <code>boat_data = pd.read_csv('boat_data.csv')</code>
-          <br />
-          <code>
-            boat_data[['Currency', 's_Price']] = boat_data['Price'].str.split('
-            ', expand=True)
-          </code>
-        </p>
         <p style="text-align: justify;">
           Splitting the price column enabled me to find all distinct currency.
         </p>
-        <p>
-          Checking for distinct values
-          <br />
-          <code>boat_data.Currency.drop_duplicates()</code>
-        </p>
-        <p>
-          Output shows there are four distinct currencies namely Swiss Franc
+          There are four distinct currencies namely Swiss Franc
           (CHF), Euro (EUR), Danish Krone (DKK) and British Pound (Â£).
         </p>
         <p style="text-align: justify;">
@@ -120,37 +98,11 @@
           Pound rate = 1.36.
         </p>
         <p style="text-align: justify;">
-          converting the price to dollars
+          The size of the boats was not provided,the “length” and “width”
+          columns were used find the size of the boats (Area = length x width).
           <br />
-          <pre>
-            <code>
-              boat_data.loc[boat_data.Currency == "CHF", "Price_USD"] = boat_data['s_Price'] * 1.09
-              boat_data.loc[boat_data.Currency == "EUR", "Price_USD"] = boat_data['s_Price'] * 1.13
-              boat_data.loc[boat_data.Currency == "DKK", "Price_USD"] = boat_data['s_Price'] * 0.15
-              boat_data.loc[boat_data.Currency == "Â£", "Price_USD"] = boat_data['s_Price'] * 1.36              
-            </code>
-          </pre>
-        </p>
-        <p style="text-align: justify;">
-          The size of the boats was not provided, but the “length” and “width”
-          columns were provided. To find the size of the boats, I used the Area
-          formula which is length x width.
-          <br />
-        </p>
-        <p style="text-align: justify;">
-          Creating a column called Area to store the size of the boat
-          <br />
-          <code>
-            boat_data['Area'] = boat_data['Length'] * boat_data['Width']
-          </code>
-        </p>
-        <p style="text-align: justify;">
-          Exporting boat_data as CSV.
-          <br />
-          <code>boat_data.to_csv('boat_data_v2.csv', index=False)</code>
         </p>
         <p>&nbsp;</p>
-        <h5><strong>3. Insight on Boat Sales</strong></h5>
         <p style="text-align: justify;">
           <strong>The Objective</strong>
           <br />
@@ -160,6 +112,15 @@
           <li>is it the most expensive boats that get the most views?</li>
           <li>What are the common features among the most viewed boats?</li>
         </ul>
+        <p style="text-align: justify;">
+          Motor Yachht is the most viewd boat <br>
+          The price of a boat is not a factor for higher views <br>
+          Used boats 
+            gets more views than the new counterpart,modern boats (post 2000s) are viewed more.
+          <p>
+            <strong> In-depth Analysis </strong>
+          </p>
+        </p>
         <p style="text-align: justify;">
           <strong>Note:</strong>
           the cost of the boats was converted to USD in order to have uniform
@@ -207,7 +168,7 @@
         </div>
 
         <p>&nbsp;</p>
-        <h5><strong>4. Conclusion</strong></h5>
+        <h5><strong>Conclusion</strong></h5>
         <p style="text-align: justify;">
           The most viewed boat is the “Motor Yacht.” It had significantly more 
           views than the second (about 100,000 more views). Looking deeper into 
